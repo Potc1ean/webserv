@@ -14,6 +14,7 @@
 
 int main()
 {
-    std::cout << "hello webserv." << std::endl;
+    Server s(8080);
+    s.start();
     return 0;
 }

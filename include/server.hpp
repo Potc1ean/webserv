@@ -16,10 +16,18 @@
 
 #include <iostream>
 #include <string>
+#include <unistd.h>
+#include <stdlib.h>
+#include <cstring>
+#include <cstdio>
+#include <sys/socket.h>
+#include <netinet/in.h>
 
 class Server {
     private:
-        int port_;
+        int port;
+        int serverSocket;
+        bool isRunning;
         void handle_client(int client_socket);
     public:
         Server(int port);

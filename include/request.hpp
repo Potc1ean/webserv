@@ -15,3 +15,9 @@
 #pragma once
 
 #include "server.hpp"
+
+class Request {
+    private :
+
+    public :
+};
